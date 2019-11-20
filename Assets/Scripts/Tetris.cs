@@ -33,31 +33,32 @@ public class Tetris : MonoBehaviour
     private bool isSixObjectFinished;
     private bool isSeventhObjectFinished;
 
-    private Vector3 startPositionCube = new Vector3(1.0f, 10.0f, 1.0f);
-    private Vector3 endPositionCube = new Vector3(1.0f, -2.5f, 1.0f);
-    private Vector3 endPositionBeam = new Vector3(1.0f, -1.0f, 1.0f);
+    private Vector3 startPositionCube = new Vector3(0.0f, 10.0f, 1.0f);
+    private Vector3 endPositionCube = new Vector3(0.0f, -2.5f, 1.0f);
+    private Vector3 endPositionBeam = new Vector3(0.0f, -1.0f, 1.0f);
 
     private Vector3 startPositionEnemy = new Vector3(-1.5f, 10.0f, 1.0f);
-    private Vector3 endPositionEnemy = new Vector3(1.0f, -1.5f, 1.0f);
+    private Vector3 endPositionEnemy = new Vector3(0.0f, -0.5f, 1.0f);
 
     private Vector3 startPositionEnemySteal = new Vector3(1.5f, 10.0f, 1.0f);
-    private Vector3 endPositionEnemySteal = new Vector3(1.0f, 1.5f, 1.0f);
+    private Vector3 endPositionEnemySteal = new Vector3(0.0f, 1.5f, 1.0f);
 
     private Vector3 startPositionBlueCube = new Vector3(1.5f, 10.0f, 1.0f);
-    private Vector3 endPositionBlueCube = new Vector3(1.0f, 3.5f, 1.0f);
+    private Vector3 endPositionBlueCube = new Vector3(0.0f, 3.5f, 1.0f);
 
     private Vector3 startPositionPurpleLemonBeam = new Vector3(1.5f, 10.0f, 1.0f);
-    private Vector3 endPositionPurpleLemonBeam = new Vector3(1.0f, 4.5f, 1.0f);
+    private Vector3 endPositionPurpleLemonBeam = new Vector3(0.0f, 4.5f, 1.0f);
 
     private Vector3 startPositionPurpleEnemyBlack = new Vector3(1.5f, 10.0f, 1.0f);
-    private Vector3 endPositionPurpleEnemyBlack = new Vector3(1.0f, 6.5f, 1.0f);
+    private Vector3 endPositionPurpleEnemyBlack = new Vector3(0.0f, 6.5f, 1.0f);
     
-    private Vector3 textPosition = new Vector3(-3f, 3f, 1.0f);
+    private Vector3 textPosition = new Vector3(-3.3f, 3f, 1.0f);
 
     private float speed = 0.1f;
 
     void Start()
     {
+    
         purpleBeam = Instantiate(m_PurpleBeam);
         redCube = Instantiate(m_RedCube);
         enemy = Instantiate(m_Enemy);
