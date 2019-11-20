@@ -33,8 +33,9 @@ public class Tetris : MonoBehaviour
     private bool isSixObjectFinished;
     private bool isSeventhObjectFinished;
 
-    private Vector3 startPositionCube = new Vector3(0.0f, 10.0f, 1.0f);
-    private Vector3 endPositionCube = new Vector3(0.0f, -2.5f, 1.0f);
+    private Vector3 startPositionCube = new Vector3(-0.5f, 10.0f, 1.0f);
+    private Vector3 endPositionCube = new Vector3(0.5f, -2.5f, 1.0f);
+    
     private Vector3 endPositionBeam = new Vector3(0.0f, -1.0f, 1.0f);
 
     private Vector3 startPositionEnemy = new Vector3(-1.5f, 10.0f, 1.0f);
@@ -46,7 +47,7 @@ public class Tetris : MonoBehaviour
     private Vector3 startPositionBlueCube = new Vector3(1.5f, 10.0f, 1.0f);
     private Vector3 endPositionBlueCube = new Vector3(0.0f, 3.5f, 1.0f);
 
-    private Vector3 startPositionPurpleLemonBeam = new Vector3(1.5f, 10.0f, 1.0f);
+    private Vector3 startPositionPurpleLemonBeam = new Vector3(0.5f, 10.0f, 1.0f);
     private Vector3 endPositionPurpleLemonBeam = new Vector3(0.0f, 4.5f, 1.0f);
 
     private Vector3 startPositionPurpleEnemyBlack = new Vector3(1.5f, 10.0f, 1.0f);
