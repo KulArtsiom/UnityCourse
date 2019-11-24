@@ -285,7 +285,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 9, y: 10, z: -10, w: 7.59375}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9956691cfdc7541ca9caf5a7c6ba851a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e72d12ffe9474019851d2ce67042758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_RedCube: {fileID: 944204153}
