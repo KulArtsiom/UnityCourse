@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class StickHeroController : MonoBehaviour
 {
     [SerializeField] private StickHeroStick m_Stick;
     [SerializeField] private StickHeroPlayer m_Player;
-    [SerializeField] private StickHeroPlatform[] m_Platforms;
+    [SerializeField] private List<StickHeroPlatform> m_Platforms;
+    [SerializeField] private StickHeroPlatform m_Platform;
 
     private int counter; //счетчик платформ
+    private StickHeroPlatform stickHeroPlatform;
     
     private enum EGameState
     {
@@ -57,6 +60,7 @@ public class StickHeroController : MonoBehaviour
                 break;
             
             case EGameState.Defeat:
+               
                 print("Game restarted");
                 int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(activeSceneIndex);
@@ -114,7 +118,20 @@ public class StickHeroController : MonoBehaviour
     {
         currentGameState = EGameState.Wait;
         counter++;
+        GeneratePlatform();
         m_Stick.ResetStick(m_Platforms[counter].GetStickPosition());
+    }
+    
+    public void GeneratePlatform()
+    {
+        stickHeroPlatform = Instantiate(m_Platform);
+        float value = Random.Range(0.5f, 1.5f);
+        stickHeroPlatform.transform.position = new Vector3(
+            m_Platforms[counter].transform.position.x 
+            + value, m_Platforms[counter].transform.position.y);
+        float valueX = Random.Range(0.2f, 0.7f);
+        stickHeroPlatform.transform.localScale = new Vector3(x: valueX, y: 1.0f, z: 1.0f);
+        m_Platforms.Add(stickHeroPlatform);
     }
 
     public void ShowScores()
