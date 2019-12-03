@@ -43,6 +43,9 @@ public class FingerDriverTrack : MonoBehaviour
         m_lineRenderer.positionCount = corners.Length;
         m_lineRenderer.SetPositions(corners);
 
+        //сгенерировать всех соседей в одном сегменте
+        //проверять только массив соседей
+
         //запекаем меш сетку из Line Renderer
         Mesh mesh = new Mesh();
         m_lineRenderer.BakeMesh(mesh, true);

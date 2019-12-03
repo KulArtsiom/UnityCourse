@@ -56,6 +56,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Hop\Scripts\HopCamera.cs" />
+     <Compile Include="Assets\Hop\Scripts\HopInput.cs" />
+     <Compile Include="Assets\Hop\Scripts\HopPlatform.cs" />
+     <Compile Include="Assets\Hop\Scripts\HopPlayer.cs" />
+     <Compile Include="Assets\Hop\Scripts\HopTrack.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />
@@ -65,9 +70,6 @@
      <Compile Include="Assets\StickHero\Scripts\StickHeroPlatform.cs" />
      <Compile Include="Assets\StickHero\Scripts\StickHeroPlayer.cs" />
      <Compile Include="Assets\StickHero\Scripts\StickHeroStick.cs" />
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -76,9 +78,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
@@ -91,6 +90,12 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
