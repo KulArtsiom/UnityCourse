@@ -4,6 +4,17 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="FingerDriver" t="Include">
+            <e p="FingerDriverCamera.cs" t="Include" />
+            <e p="FingerDriverInput.cs" t="Include" />
+            <e p="FingerDriverPlayer.cs" t="Include" />
+            <e p="FingerDriverTrack.cs" t="Include" />
+          </e>
+          <e p="Mathf" t="Include">
+            <e p="MathfTriangles.cs" t="Include" />
+          </e>
+        </e>
         <e p="StickHero" t="Include">
           <e p="Scripts" t="Include">
             <e p="StickHeroController.cs" t="Include" />
