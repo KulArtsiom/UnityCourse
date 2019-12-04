@@ -5,14 +5,20 @@ using UnityEngine;
 public class HopTrack : MonoBehaviour
 {
     [SerializeField] private GameObject m_Platform;
-    [SerializeField] private GameObject m_GreenPlatform;
+    [SerializeField] private bool m_useRandomSeed;
+    [SerializeField] private int m_seed = 123456;
     
-    private List<GameObject> platforms = new List<GameObject>();
+   private List<GameObject> platforms = new List<GameObject>();
     
     void Start()
     {
         
         platforms.Add(m_Platform);
+
+        if (m_useRandomSeed)
+        {
+         Random.InitState(m_seed);   
+        }
 
         for (int i = 0; i < 25; i++)
         {
@@ -61,8 +67,17 @@ public class HopTrack : MonoBehaviour
         float minX = nearestPlatform.transform.position.x - 0.5f;
         float maxX = nearestPlatform.transform.position.x + 0.5f;
 
-        var platform = nearestPlatform.GetComponent<HopPlatform>();
-        platform.SetGreen();
+        if (position.x > minX && position.x < maxX)
+        {
+            var platform = nearestPlatform.GetComponent<HopPlatform>();
+                    platform.SetGreen();
+        }
+        else
+        {
+            var platform = nearestPlatform.GetComponent<HopPlatform>();
+            platform.SetRed();
+        }
+       
         
         return position.x > minX && position.x < maxX;
     }
