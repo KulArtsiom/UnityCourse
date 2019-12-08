@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class HopPlayer : MonoBehaviour
 {
     [SerializeField] private AnimationCurve m_JumpCurve;
-    [SerializeField] private float m_JumpHeight = 1;
     [SerializeField] private float m_JumpDistance = 2f;
-    [SerializeField] private float m_BallSpeed = 1f;
     [SerializeField] private HopInput m_Input;
     [SerializeField] private HopTrack m_Track;
 
     private float iteration; //цикл прыжка 
     private float startZ;//точка начала прыжка 
+    private float speed = 1f;//дефолтная скорость
+    private float height = 1f;
     
     // Update is called once per frame
     void Update()
@@ -24,13 +24,15 @@ public class HopPlayer : MonoBehaviour
         pos.x = Mathf.Lerp(pos.x, m_Input.Strafe, Time.deltaTime * 5f);
         
         //прыжок 
-        pos.y = m_JumpCurve.Evaluate(iteration) * m_JumpHeight;
+        pos.y = m_JumpCurve.Evaluate(iteration) * height;
 
         //движение вперед
         pos.z = startZ + iteration * m_JumpDistance;
         transform.position = pos;
 
-        iteration += Time.deltaTime * m_BallSpeed;
+        
+        iteration += Time.deltaTime * speed;
+        
         if (iteration < 1f)
         {
             return;
@@ -41,6 +43,8 @@ public class HopPlayer : MonoBehaviour
 
         if (m_Track.isBallOnPlatform(transform.position))
         {
+            speed = m_Track.speed;
+            height = m_Track.height;
             return;
         }
 
