@@ -58,7 +58,7 @@ public class FitInTheHole_Template : MonoBehaviour
     }
 
     //TODO работает только в случае расположеия стартовой точки справа от фигур!!!
-    private void MoveLeft()
+    private void MoveRight()
     {
         if (!IsMovementPossible(1))
             return;
@@ -69,7 +69,7 @@ public class FitInTheHole_Template : MonoBehaviour
     }
 
 
-    private void MoveRight()
+    private void MoveLeft()
     {
         if (!IsMovementPossible(-1))
             return;
