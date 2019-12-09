@@ -16,7 +16,7 @@ public class HopInput : MonoBehaviour
 
     private void Update()
     {
-        if (!Input.GetMouseButtonDown(0))
+        if (!Input.GetMouseButton(0))
         {
             return;
         }
