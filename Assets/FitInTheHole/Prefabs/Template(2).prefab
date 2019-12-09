@@ -310,7 +310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5834939424476187975}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5834939423823536306
 MeshFilter:
@@ -682,7 +682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5834939424476187975}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5834939424275192726
 MeshFilter:
@@ -774,8 +774,8 @@ Transform:
   m_Children:
   - {fileID: 5834939423883778388}
   - {fileID: 5834939424117940007}
-  - {fileID: 5834939424275192725}
   - {fileID: 5834939423823536305}
+  - {fileID: 5834939424275192725}
   - {fileID: 5834939423166868791}
   - {fileID: 5834939424119359051}
   - {fileID: 5834939424906461570}
@@ -800,6 +800,7 @@ MonoBehaviour:
   m_Cubes:
   - {fileID: 5834939423883778388}
   - {fileID: 5834939424117940007}
+  - {fileID: 5834939423823536305}
   - {fileID: 5834939424275192725}
   m_PlayerPosition: {fileID: 5834939423166868791}
   m_PositionVariants:

@@ -43,13 +43,16 @@ public class FitInTheHole_FigureTweener : MonoBehaviour
 
         if (isX)
         {
-            //смещение по оси Х делаем только влево или вправи по нижней грани
+            //смещение по оси Х делаем только влево или вправо по нижней грани
             rotationPoint.y -= 0.5f;
             //bug!!!!!!
             rotationDirection = to.x < from.x ? 1 : -1;
         }
         else
         {
+            rotationPoint.x += 0.5f;
+            rotationDirection = to.y < from.y ? 1 : -1;
+            
             //TODO - корректное смещение по по оси Y не поддерживается            
         }
     }

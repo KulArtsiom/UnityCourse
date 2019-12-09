@@ -12,7 +12,7 @@ namespace FinInTheHole.Scripts
         [SerializeField] private FitInTheHole_Template[] m_TemplatePrefabs;
         [SerializeField] private Transform m_FigurePoint;
 
-        private FitInTheHole_Template[] templates;// храним экземплярыб чтобы не инстансировать кажлый раз
+        private FitInTheHole_Template[] templates;// храним экземпляры чтобы не инстансировать кажлый раз
         private FitInTheHole_Template figure; // текущая фигура
         
 
