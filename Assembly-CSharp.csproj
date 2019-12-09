@@ -56,10 +56,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FinInTheHole\Scripts\FitInTheHole_FigureTweener.cs" />
-     <Compile Include="Assets\FinInTheHole\Scripts\FitInTheHole_LevelGenerator.cs" />
-     <Compile Include="Assets\FinInTheHole\Scripts\FitInTheHole_Template.cs" />
-     <Compile Include="Assets\FinInTheHole\Scripts\FitInTheHole_Wall.cs" />
+     <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_FigureTweener.cs" />
+     <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_LevelGenerator.cs" />
+     <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_Template.cs" />
+     <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_Wall.cs" />
      <Compile Include="Assets\Hop\Scripts\HopCamera.cs" />
      <Compile Include="Assets\Hop\Scripts\HopInput.cs" />
      <Compile Include="Assets\Hop\Scripts\HopPlatform.cs" />
