@@ -35,7 +35,7 @@ public class FitInTheHole_Template : MonoBehaviour
         {
             if (i == rand)
             {
-                m_PositionVariants[i].gameObject.SetActive(true);
+                m_PositionVariants[i].gameObject.SetActive(false);
                 CurrentTarget = m_PositionVariants[i].transform;
                 continue;
             }
