@@ -56,6 +56,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeGameController.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeGameManager.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeLevelGenerator.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeObstacle.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeScore.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeSnake.cs" />
+     <Compile Include="Assets\ColorSnake\Scripts\ColorSnakeTypes.cs" />
      <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_FigureTweener.cs" />
      <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_LevelGenerator.cs" />
      <Compile Include="Assets\FitInTheHole\Scripts\FitInTheHole_Template.cs" />
@@ -65,6 +72,12 @@
      <Compile Include="Assets\Hop\Scripts\HopPlatform.cs" />
      <Compile Include="Assets\Hop\Scripts\HopPlayer.cs" />
      <Compile Include="Assets\Hop\Scripts\HopTrack.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeCandy.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeCandyData.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeCell.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeController.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeField.cs" />
+     <Compile Include="Assets\MatchThree\Scripts\MatchThreeTypes.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />

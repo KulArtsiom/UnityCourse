@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ColorSnake/Scene/ColorSnakeScene.unity
+    guid: 08f9cab3e55a344f4bb7576ed6c824f2
+  - enabled: 1
+    path: Assets/ColorSnake/Scene/ColorSnakeMenu.unity
+    guid: 8703f923ebcdb4f47ab37aae2b76c76c
   m_configObjects: {}

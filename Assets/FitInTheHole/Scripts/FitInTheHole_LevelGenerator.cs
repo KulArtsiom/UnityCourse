@@ -17,7 +17,7 @@ namespace FinInTheHole.Scripts
         
 
 
-        private float speed;
+        private float speed = 20f;
         private FitInTheHole_Wall wall;
 
         private void Start()
@@ -33,11 +33,11 @@ namespace FinInTheHole.Scripts
             wall = new FitInTheHole_Wall(5,5, m_CubePrefab);
             SetupTemplate();
             wall.SetUpWall(figure, m_WallDistance);
-            speed = m_Speed;
         }
 
         private void Update()
         {
+            speed += 1.0f;
             wall.Parent.transform.Translate(speed * Time.deltaTime * Vector3.back);
 
             if (wall.Parent.transform.position.z > m_WallDistance *-1f)
