@@ -87,6 +87,7 @@
      <Compile Include="Assets\Games\StickHero\Scripts\StickHeroPlayer.cs" />
      <Compile Include="Assets\Games\StickHero\Scripts\StickHeroStick.cs" />
      <Compile Include="Assets\Scripts\CubeGeneratorScript.cs" />
+     <Compile Include="Assets\Scripts\EventsScript.cs" />
      <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
      <Compile Include="Assets\Scripts\SampleScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
