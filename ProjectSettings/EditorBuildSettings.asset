@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ColorSnake/Scene/ColorSnakeScene.unity
+    path: Assets/Games/ColorSnake/Scene/ColorSnakeScene.unity
     guid: 08f9cab3e55a344f4bb7576ed6c824f2
   - enabled: 1
     path: Assets/ColorSnake/Scene/ColorSnakeMenu.unity

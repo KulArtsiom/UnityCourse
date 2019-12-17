@@ -43,6 +43,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CubeGeneratorScript.cs" t="Include" />
           <e p="FingerDriver" t="Include">
             <e p="FingerDriverCamera.cs" t="Include" />
             <e p="FingerDriverInput.cs" t="Include" />
@@ -52,6 +53,7 @@
           <e p="Mathf" t="Include">
             <e p="MathfTriangles.cs" t="Include" />
           </e>
+          <e p="SampleScript.cs" t="Include" />
         </e>
         <e p="StickHero" t="Include">
           <e p="Scripts" t="Include">

@@ -7,7 +7,6 @@ namespace FinInTheHole.Scripts
     public class FitInTheHole_LevelGenerator : MonoBehaviour
     {
         [SerializeField] private GameObject m_CubePrefab;
-        [SerializeField] private float m_Speed = 20f;
         [SerializeField] private float m_WallDistance = 35f;
         [SerializeField] private FitInTheHole_Template[] m_TemplatePrefabs;
         [SerializeField] private Transform m_FigurePoint;
@@ -17,8 +16,9 @@ namespace FinInTheHole.Scripts
         
 
 
-        private float speed = 20f;
+        private float speed = 10f;
         private FitInTheHole_Wall wall;
+        
 
         private void Start()
         {
@@ -37,7 +37,7 @@ namespace FinInTheHole.Scripts
 
         private void Update()
         {
-            speed += 1.0f;
+           
             wall.Parent.transform.Translate(speed * Time.deltaTime * Vector3.back);
 
             if (wall.Parent.transform.position.z > m_WallDistance *-1f)
@@ -47,6 +47,7 @@ namespace FinInTheHole.Scripts
             
             SetupTemplate();
             wall.SetUpWall(figure, m_WallDistance);
+            speed += 0.01f;
         }
 
         private void SetupTemplate()
