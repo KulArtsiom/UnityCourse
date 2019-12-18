@@ -9,4 +9,6 @@ public class ColorSnakeGameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
+    
 }

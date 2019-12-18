@@ -60,6 +60,18 @@
             </e>
           </e>
         </e>
+        <e p="Lab" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="LabCamera.cs" t="Include" />
+            <e p="LabInput.cs" t="Include" />
+            <e p="LabPlatform.cs" t="Include" />
+            <e p="LabPlayer.cs" t="Include" />
+            <e p="LabSceneManager.cs" t="Include" />
+            <e p="LabScoreNew.cs" t="Include" />
+            <e p="LabScores.cs" t="Include" />
+            <e p="LabTrack.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CubeGeneratorScript.cs" t="Include" />
           <e p="EventsScript.cs" t="Include" />

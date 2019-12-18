@@ -86,6 +86,14 @@
      <Compile Include="Assets\Games\StickHero\Scripts\StickHeroPlatform.cs" />
      <Compile Include="Assets\Games\StickHero\Scripts\StickHeroPlayer.cs" />
      <Compile Include="Assets\Games\StickHero\Scripts\StickHeroStick.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabCamera.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabInput.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPlatform.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPlayer.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabSceneManager.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabScoreNew.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabScores.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabTrack.cs" />
      <Compile Include="Assets\Scripts\CubeGeneratorScript.cs" />
      <Compile Include="Assets\Scripts\EventsScript.cs" />
      <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
