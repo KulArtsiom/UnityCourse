@@ -78,6 +78,7 @@
           <e p="Mathf" t="Include">
             <e p="MathfTriangles.cs" t="Include" />
           </e>
+          <e p="RotateCube.cs" t="Include" />
           <e p="SampleScript.cs" t="Include" />
         </e>
       </e>

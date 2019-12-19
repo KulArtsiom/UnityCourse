@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Vector3 = System.Numerics.Vector3;
+using Vector3 = System.Numerics;
 
 public class FingerDriverInput : MonoBehaviour
 {
