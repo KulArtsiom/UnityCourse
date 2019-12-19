@@ -58,36 +58,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeGameController.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeGameManager.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeLevelGenerator.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeObstacle.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeScore.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeSnake.cs" />
-     <Compile Include="Assets\Games\ColorSnake\Scripts\ColorSnakeTypes.cs" />
-     <Compile Include="Assets\Games\FingerDriver\Scripts\FingerDriverCamera.cs" />
-     <Compile Include="Assets\Games\FingerDriver\Scripts\FingerDriverInput.cs" />
-     <Compile Include="Assets\Games\FingerDriver\Scripts\FingerDriverPlayer.cs" />
-     <Compile Include="Assets\Games\FingerDriver\Scripts\FingerDriverTrack.cs" />
-     <Compile Include="Assets\Games\FitInTheHole\Scripts\FitInTheHole_FigureTweener.cs" />
-     <Compile Include="Assets\Games\FitInTheHole\Scripts\FitInTheHole_LevelGenerator.cs" />
-     <Compile Include="Assets\Games\FitInTheHole\Scripts\FitInTheHole_Template.cs" />
-     <Compile Include="Assets\Games\FitInTheHole\Scripts\FitInTheHole_Wall.cs" />
-     <Compile Include="Assets\Games\Hop\Scripts\HopCamera.cs" />
-     <Compile Include="Assets\Games\Hop\Scripts\HopInput.cs" />
-     <Compile Include="Assets\Games\Hop\Scripts\HopPlatform.cs" />
-     <Compile Include="Assets\Games\Hop\Scripts\HopPlayer.cs" />
-     <Compile Include="Assets\Games\Hop\Scripts\HopTrack.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeCandy.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeCandyData.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeCell.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeController.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeField.cs" />
-     <Compile Include="Assets\Games\MatchThree\Scripts\MatchThreeTypes.cs" />
-     <Compile Include="Assets\Games\StickHero\Scripts\StickHeroController.cs" />
-     <Compile Include="Assets\Games\StickHero\Scripts\StickHeroPlatform.cs" />
-     <Compile Include="Assets\Games\StickHero\Scripts\StickHeroPlayer.cs" />
-     <Compile Include="Assets\Games\StickHero\Scripts\StickHeroStick.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\BaseEnemy.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\InputController.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\Interfaces.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\Platform.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\Player.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\StaticObject.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeGameController.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeGameManager.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeLevelGenerator.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeObstacle.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeScore.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeSnake.cs" />
+     <Compile Include="Assets\Games\Casual\ColorSnake\Scripts\ColorSnakeTypes.cs" />
+     <Compile Include="Assets\Games\Casual\FingerDriver\Scripts\FingerDriverCamera.cs" />
+     <Compile Include="Assets\Games\Casual\FingerDriver\Scripts\FingerDriverInput.cs" />
+     <Compile Include="Assets\Games\Casual\FingerDriver\Scripts\FingerDriverPlayer.cs" />
+     <Compile Include="Assets\Games\Casual\FingerDriver\Scripts\FingerDriverTrack.cs" />
+     <Compile Include="Assets\Games\Casual\FitInTheHole\Scripts\FitInTheHole_FigureTweener.cs" />
+     <Compile Include="Assets\Games\Casual\FitInTheHole\Scripts\FitInTheHole_LevelGenerator.cs" />
+     <Compile Include="Assets\Games\Casual\FitInTheHole\Scripts\FitInTheHole_Template.cs" />
+     <Compile Include="Assets\Games\Casual\FitInTheHole\Scripts\FitInTheHole_Wall.cs" />
+     <Compile Include="Assets\Games\Casual\Hop\Scripts\HopCamera.cs" />
+     <Compile Include="Assets\Games\Casual\Hop\Scripts\HopInput.cs" />
+     <Compile Include="Assets\Games\Casual\Hop\Scripts\HopPlatform.cs" />
+     <Compile Include="Assets\Games\Casual\Hop\Scripts\HopPlayer.cs" />
+     <Compile Include="Assets\Games\Casual\Hop\Scripts\HopTrack.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeCandy.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeCandyData.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeCell.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeController.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeField.cs" />
+     <Compile Include="Assets\Games\Casual\MatchThree\Scripts\MatchThreeTypes.cs" />
+     <Compile Include="Assets\Games\Casual\StickHero\Scripts\StickHeroController.cs" />
+     <Compile Include="Assets\Games\Casual\StickHero\Scripts\StickHeroPlatform.cs" />
+     <Compile Include="Assets\Games\Casual\StickHero\Scripts\StickHeroPlayer.cs" />
+     <Compile Include="Assets\Games\Casual\StickHero\Scripts\StickHeroStick.cs" />
      <Compile Include="Assets\Lab\Scripts\LabCamera.cs" />
      <Compile Include="Assets\Lab\Scripts\LabInput.cs" />
      <Compile Include="Assets\Lab\Scripts\LabPlatform.cs" />
@@ -127,6 +137,9 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>/Users/artyom/Desktop/repositories/UnityCourse/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.3.0f3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
