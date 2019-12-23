@@ -1,9 +1,9 @@
 using UnityEngine;
 
+
 public class StaticObject : MonoBehaviour, IHitBox
 {
     [SerializeField] private int health = 1;
-
     public int Health
     {
         get => health;
@@ -16,7 +16,7 @@ public class StaticObject : MonoBehaviour, IHitBox
             }
         }
     }
-
+    
     public void Hit(int damage)
     {
         Health -= damage;

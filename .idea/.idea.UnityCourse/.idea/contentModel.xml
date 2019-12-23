@@ -90,6 +90,11 @@
             <e p="LabTrack.cs" t="Include" />
           </e>
         </e>
+        <e p="Samples" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="LevelChanger.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CubeGeneratorScript.cs" t="Include" />
           <e p="EventsScript.cs" t="Include" />

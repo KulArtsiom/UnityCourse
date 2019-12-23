@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour, IEnemy, IHitBox
 {
-    public void RegisterEmemy()
+    public void RegisterEnemy()
     {
         GameManager manager = FindObjectOfType<GameManager>();
         manager.Enemies.Add(this);
     }
+
+    private void Awake()
+    {
+        RegisterEnemy();
+    }
     
     [SerializeField] private int health = 1;
-
     public int Health
     {
         get => health;
@@ -24,7 +28,7 @@ public class BaseEnemy : MonoBehaviour, IEnemy, IHitBox
             }
         }
     }
-
+    
     public void Hit(int damage)
     {
         Health -= damage;
@@ -32,11 +36,6 @@ public class BaseEnemy : MonoBehaviour, IEnemy, IHitBox
 
     public void Die()
     {
-        print("Player died");
-    }
-
-    private void Awake()
-    {
-        RegisterEmemy();
+        print("Enemy died");
     }
 }

@@ -1,11 +1,13 @@
-﻿public interface IPlayer
+﻿using UnityEngine.UIElements;
+
+public interface IPlayer
 {
     void RegisterPlayer();
 }
 
 public interface IEnemy
 {
-    void RegisterEmemy();
+    void RegisterEnemy();
 }
 
 public interface IDamager
@@ -20,3 +22,5 @@ public interface IHitBox
     void Hit(int damage);
     void Die();
 }
+
+

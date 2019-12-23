@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 
-
 public class Player : MonoBehaviour, IPlayer, IHitBox
 {
     public void RegisterPlayer()
@@ -18,13 +17,7 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
         }
     }
 
-    private void Awake()
-    {
-        RegisterPlayer();
-    }
-
     [SerializeField] private int health = 1;
-
     public int Health
     {
         get => health;
@@ -37,7 +30,7 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
             }
         }
     }
-
+    
     public void Hit(int damage)
     {
         Health -= damage;
@@ -47,4 +40,11 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
     {
         print("Player died");
     }
+
+    private void Awake()
+    {
+        RegisterPlayer();
+    }
+
+
 }

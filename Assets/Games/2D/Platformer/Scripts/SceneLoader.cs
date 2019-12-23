@@ -1,45 +1,73 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class SceneLoader : MonoBehaviour
 {
     private static string nextLevel;
+    private Quaternion quaternion;
+    private Animator animator;
+    
+    public Text text;
+    public Animator Animator;
+
+    private string LoadingText;
+    private int frame;
+    private LevelChanger LevelChanger;
 
     public static void LoadLevel(string level)
     {
         nextLevel = level;
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("LoadingScene");
     }
 
     private IEnumerator Start()
     {
-        GameManager.SetGameState(GameState.Loadind);
+        quaternion = Quaternion.AngleAxis(3, Time.deltaTime * 0.5f * Vector3.up);
+        text.text = "Loading";
+        LevelChanger = gameObject.AddComponent<LevelChanger>();
 
-        yield return new WaitForSeconds(1f);
-
+        GameManager.SetGameState(GameState.Loading);
+        yield return new WaitForSeconds(3f);
         if (string.IsNullOrEmpty(nextLevel))
         {
-            SceneManager.LoadScene("MainMenu");
+            LevelChanger.FadeToLevel("MainMenu", Animator);
             yield break;
         }
 
+        var loading = LevelChanger.Load(nextLevel);
 
-        var loading = SceneManager.LoadSceneAsync(nextLevel, LoadSceneMode.Additive);
-
-        while (loading.isDone)
+        while (!loading.isDone)
         {
-            // тут можем получать прогресс 
-            //loading.progress
-                
-                
-            //пока ничего не закгрузится откладываем до конца кадра
             yield return null;
         }
 
         nextLevel = null;
         SceneManager.UnloadSceneAsync("LoadingScene");
+    }
+
+    private void UpdateLoadingText()
+    {
+        if (text.text.Equals("Loading..."))
+        {
+            text.text = "Loading";
+        }
+
+        text.text += ".";
+    }
+
+    private void Update()
+    {
+        if (frame == 40)
+        {
+            frame = 0;
+            UpdateLoadingText();
+        }
+
+        transform.rotation *= quaternion;
+        frame++;
     }
 }
