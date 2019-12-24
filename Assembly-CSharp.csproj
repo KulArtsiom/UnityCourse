@@ -106,7 +106,7 @@
      <Compile Include="Assets\Lab\Scripts\LabScoreNew.cs" />
      <Compile Include="Assets\Lab\Scripts\LabScores.cs" />
      <Compile Include="Assets\Lab\Scripts\LabTrack.cs" />
-     <Compile Include="Assets\Samples\Scripts\LevelChanger.cs" />
+     <Compile Include="Assets\Samples\FadeSample\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\CubeGeneratorScript.cs" />
      <Compile Include="Assets\Scripts\EventsScript.cs" />
      <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
