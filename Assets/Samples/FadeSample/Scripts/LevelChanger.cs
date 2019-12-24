@@ -5,6 +5,9 @@ public class LevelChanger : MonoBehaviour
 {
 
     public static string levelToLoad;
+
+    private static readonly int FadeOut = Animator.StringToHash("FadeOut");
+
     // Update is called once per frame
     void Update()
     {
@@ -14,7 +17,7 @@ public class LevelChanger : MonoBehaviour
     public void FadeToLevel(string levelIndex, Animator animator)
     {
         levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
+        animator.SetTrigger(FadeOut);
     }
 
     public AsyncOperation Load(string nextLevel)
