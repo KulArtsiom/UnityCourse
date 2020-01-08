@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IPlayer, IHitBox
 {
+    private PlayerWeapon[] weapons;
+    
     public void RegisterPlayer()
     {
         GameManager manager = FindObjectOfType<GameManager>();
@@ -44,7 +46,23 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
     private void Awake()
     {
         RegisterPlayer();
+        weapons = GetComponents<PlayerWeapon>();
+        InputController.FireAction += Attack;
     }
 
+    private void OnDestroy()
+    {
+        InputController.FireAction -= Attack;
+    }
 
+    private void Attack(string button)
+    {
+        foreach (var weapon in weapons)
+        {
+            if (weapon.ButtonName == button)
+            {
+                weapon.SetDamage();
+            }
+        }
+    }
 }
