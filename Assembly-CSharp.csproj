@@ -63,6 +63,7 @@
      <Compile Include="Assets\Games\2D\Platformer\Scripts\GameManager.cs" />
      <Compile Include="Assets\Games\2D\Platformer\Scripts\InputController.cs" />
      <Compile Include="Assets\Games\2D\Platformer\Scripts\Interfaces.cs" />
+     <Compile Include="Assets\Games\2D\Platformer\Scripts\LevelItemsGenerator.cs" />
      <Compile Include="Assets\Games\2D\Platformer\Scripts\LevelObjectData.cs" />
      <Compile Include="Assets\Games\2D\Platformer\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Games\2D\Platformer\Scripts\Platform.cs" />

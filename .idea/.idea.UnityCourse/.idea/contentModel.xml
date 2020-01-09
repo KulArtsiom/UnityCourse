@@ -13,6 +13,7 @@
                 <e p="GameManager.cs" t="Include" />
                 <e p="InputController.cs" t="Include" />
                 <e p="Interfaces.cs" t="Include" />
+                <e p="LevelItemsGenerator.cs" t="Include" />
                 <e p="LevelObjectData.cs" t="Include" />
                 <e p="MainMenu.cs" t="Include" />
                 <e p="Platform.cs" t="Include" />
