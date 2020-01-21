@@ -9,6 +9,7 @@
             <e p="Platformer" t="Include">
               <e p="Scripts" t="Include">
                 <e p="BaseEnemy.cs" t="Include" />
+                <e p="CameraMovement.cs" t="Include" />
                 <e p="CharacterMovement.cs" t="Include" />
                 <e p="GameManager.cs" t="Include" />
                 <e p="InputController.cs" t="Include" />
@@ -16,6 +17,7 @@
                 <e p="LevelItemsGenerator.cs" t="Include" />
                 <e p="LevelObjectData.cs" t="Include" />
                 <e p="MainMenu.cs" t="Include" />
+                <e p="ObjectsGenerator.cs" t="Include" />
                 <e p="Platform.cs" t="Include" />
                 <e p="Player.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
@@ -118,7 +120,6 @@
       <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="UnityCourse.sln" t="IncludeFlat" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_UnityCourse.-807165924.00" t="ExcludeRecursive" />
   </component>
 </project>
