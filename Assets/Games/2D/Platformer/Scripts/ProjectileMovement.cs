@@ -15,12 +15,11 @@ public class ProjectileMovement : MonoBehaviour
         var rig = GetComponent<Rigidbody2D>();
         damageBullet = damage;
 
-        rig.AddForce(new Vector2(force * forceBullet * direction.x, force * forceBullet * direction.y), ForceMode2D.Impulse);
+        rig.AddForce(new Vector2(force * forceBullet * direction.x, force * 0.1f * direction.y), ForceMode2D.Impulse);
         StartCoroutine(DestroyTime());
     }
     public void LaunchBulletBackground(float force, int damage, Vector2 direction)
     {
-        StartCoroutine(BackgroundProjectile());
         LaunchBullet(force, damage, direction);
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,24 +37,5 @@ public class ProjectileMovement : MonoBehaviour
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }
-
-    private IEnumerator BackgroundProjectile()
-    {
-        var scale = transform.localScale;
-        scale.x = 0.4f;
-        scale.y = scale.x;
-        scale.z = scale.x;
-        transform.localScale = scale;
-        var collider = GetComponent<PolygonCollider2D>();
-        collider.enabled = false;
-        while (transform.localScale.x < 1)
-        {
-            yield return new WaitForSeconds(speedTimeBackgroundScale);
-            scale.x += 0.025f;
-            scale.y = scale.x;
-            scale.z = scale.x;
-            transform.localScale = scale;
-        }
-        collider.enabled = true;
-    }
+    
 }
