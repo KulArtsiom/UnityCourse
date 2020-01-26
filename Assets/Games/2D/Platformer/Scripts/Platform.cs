@@ -1,19 +1,29 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Platform : MonoBehaviour
 {
     [SerializeField] private bool isAnimated;
     [SerializeField] private float animationDistance = 5f;
     private float startX;
-
+    private bool isEffector;
+    private SurfaceEffector2D surfaceEffector2D;
+    
+    
     private void Start()
     {
         startX = transform.position.x;
         if (isAnimated)
         {
             StartCoroutine(AnimatorProccess());
+        }
+
+        isEffector = GetComponent<SurfaceEffector2D>();
+        if (isEffector)
+        {
+            surfaceEffector2D = GetComponent<SurfaceEffector2D>();
         }
     }
 
@@ -23,6 +33,11 @@ public class Platform : MonoBehaviour
         if (isMovedObject)
         {
             other.transform.parent = transform;
+        }
+
+        if (isEffector)
+        {
+            surfaceEffector2D.speed = Random.Range(-5f, 5f);
         }
     }
 
@@ -55,5 +70,6 @@ public class Platform : MonoBehaviour
             transform.position = pos;
             yield return null;
         }
+        // ReSharper disable once IteratorNeverReturns
     }
 }

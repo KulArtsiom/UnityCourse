@@ -12,6 +12,7 @@
                 <e p="CameraMovement.cs" t="Include" />
                 <e p="CharacterMovement.cs" t="Include" />
                 <e p="GameManager.cs" t="Include" />
+                <e p="GeneratorStones.cs" t="Include" />
                 <e p="InputController.cs" t="Include" />
                 <e p="Interfaces.cs" t="Include" />
                 <e p="LevelItemsGenerator.cs" t="Include" />
@@ -22,6 +23,7 @@
                 <e p="Player.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
                 <e p="PlayerWeapon.cs" t="Include" />
+                <e p="ProjectileMovement.cs" t="Include" />
                 <e p="SceneLoader.cs" t="Include" />
                 <e p="ScriptBoxAdapter.cs" t="Include" />
                 <e p="StaticObject.cs" t="Include" />
@@ -120,6 +122,7 @@
       <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="UnityCourse.sln" t="IncludeFlat" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_UnityCourse.-807165924.00" t="ExcludeRecursive" />
   </component>
 </project>
