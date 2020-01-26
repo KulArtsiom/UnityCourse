@@ -28,7 +28,7 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
             health = value;
             if (health <= 0)
             {
-                Die();
+                DieEnemy();
             }
         }
     }
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
         Health -= damage;
     }
 
-    public void Die()
+    public void DieEnemy()
     {
         print("Player died");
     }

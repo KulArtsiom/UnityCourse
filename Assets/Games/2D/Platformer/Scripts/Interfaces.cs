@@ -7,7 +7,7 @@ public interface IPlayer
 
 public interface IEnemy
 {
-    void RegisterEnemy();
+    void GetEnemy();
 }
 
 public interface IDamager
@@ -20,7 +20,7 @@ public interface IHitBox
 {
     int Health { get; }
     void Hit(int damage);
-    void Die();
+    void DieEnemy();
 }
 
 

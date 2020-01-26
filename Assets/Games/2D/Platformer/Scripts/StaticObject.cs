@@ -16,7 +16,7 @@ public class StaticObject : MonoBehaviour, IHitBox
             health = value;
             if (health <= 0)
             {
-                Die();
+                DieEnemy();
             }
         }
     }
@@ -26,7 +26,7 @@ public class StaticObject : MonoBehaviour, IHitBox
         Health -= damage;
     }
 
-    public void Die()
+    public void DieEnemy()
     {
         print("Object died");
     }

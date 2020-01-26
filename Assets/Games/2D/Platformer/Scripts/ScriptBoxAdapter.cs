@@ -36,5 +36,5 @@ public class ScriptBoxAdapter : MonoBehaviour, IHitBox
         hitBox.Hit(damage);
     }
     
-    public void Die() { hitBox.Die();}
+    public void DieEnemy() { hitBox.DieEnemy();}
 }
